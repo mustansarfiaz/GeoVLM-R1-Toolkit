@@ -115,8 +115,6 @@ and temporal classification datasets compared to other existing VLMs.
 
 ## 📊 Referred Object Detection, Region-Captioning, Grounding Description Tasks
 
-GeoVLM-R1 illustrates a consistent performance gain across referred object detection, 
-region-captioning, and grounding description tasks.
 
 <div style="overflow-x:auto;">
 <table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13px;">
@@ -311,6 +309,222 @@ region-captioning, and grounding description tasks.
 </table>
 </div>
 
+## 📊 Change Detection (CD) and Image Captioning (IC) Tasks
+
+## Change Detection (CD) and Image Captioning (IC) Tasks
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13px;">
+  <caption style="caption-side: bottom; text-align: justify; color: gray; font-size: 14px;">
+    Comparison of GeoVLM-R1 over change detection (CD) and image captioning (IC) datasets.  
+    Results indicate better capabilities of our method to generate captions compared to existing VLMs 
+    for both temporal CD and image-captioning datasets. ZS means zero-shot evaluation.
+  </caption>
+  <thead>
+    <tr>
+      <th rowspan="2" style="border: 1px solid #ddd; padding: 6px;">Model</th>
+      <th colspan="3" style="border: 1px solid #ddd; padding: 6px;">CD Dubai-CC</th>
+      <th colspan="3" style="border: 1px solid #ddd; padding: 6px;">CD LEVIR-MCI</th>
+      <th colspan="3" style="border: 1px solid #ddd; padding: 6px;">CD MUDS</th>
+      <th colspan="3" style="border: 1px solid #ddd; padding: 6px;">CD SYSU (ZS)</th>
+      <th colspan="3" style="border: 1px solid #ddd; padding: 6px;">IC NWPU-Captions</th>
+      <th colspan="3" style="border: 1px solid #ddd; padding: 6px;">IC RSCID-Captions</th>
+      <th colspan="3" style="border: 1px solid #ddd; padding: 6px;">IC RSITMD-Captions (ZS)</th>
+    </tr>
+    <tr>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge1</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge-L</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Meteor</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge1</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge-L</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Meteor</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge1</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge-L</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Meteor</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge1</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge-L</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Meteor</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge1</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge-L</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Meteor</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge1</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge-L</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Meteor</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge1</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Rouge-L</th>
+      <th style="border: 1px solid #ddd; padding: 6px;">Meteor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="border: 1px solid #ddd; padding: 6px;">GPT-4o</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">8.81</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">7.45</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">18.68</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">10.33</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">8.4</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">22.05</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">14.18</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">11.02</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">20.92</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">16.48</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">12.32</td>
+      <td style="border: 1px solid #ddd; padding: 6px;"><b>17.49</b></td>
+      <td style="border: 1px solid #ddd; padding: 6px;">19.43</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">14.86</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">28.16</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">20.53</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">15.59</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">26.03</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">18.31</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">14.22</td>
+      <td style="border: 1px solid #ddd; padding: 6px;">24.83</td>
+    </tr>
+	 <tr>
+        <td style="border: 1px solid #ddd; padding: 6px;">InternVL2-4B</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">7.31</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">6.38</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">21.12</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">8.88</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">7.43</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">22.14</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">10.25</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">7.90</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">17.73</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">13.27</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">9.98</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">14.36</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 6px;">InternVL2-8B</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">-</td>
+		<td style="border: 1px solid #ddd; padding: 6px;">-</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">20.69</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">15.64</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">30.18</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">21.59</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">16.13</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">28.17</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">18.91</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">14.65</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">26.02</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 6px;">Qwen2.5-VL-3B</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">14.41</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">13.62</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">27.59</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.27</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">10.11</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">26.11</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.13</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">9.30</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">18.22</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">13.61</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">10.34</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">16.06</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">18.82</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">14.72</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">26.79</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">21.37</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">16.42</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">26.53</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">18.79</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">15.02</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">25.05</td>
+      </tr>
+      <tr>
+        <td style="border: 1px solid #ddd; padding: 6px;">GeoChat</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">14.21</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">14.19</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">28.91</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">17.15</td>
+        <td style="border: 1px solid #ddd; padding: 6px;"><b>35.42</b></td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.35</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.28</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.23</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">15.98</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">13.45</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.02</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">13.96</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">14.86</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.54</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">15.21</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">13.48</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">11.59</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.39</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">13.41</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">11.50</td>
+        <td style="border: 1px solid #ddd; padding: 6px;">12.33</td>
+      </tr>
+	<tr>
+	  <td style="border: 1px solid #ddd; padding: 6px;">EarthDial</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">31.94</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">30.66</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">55.83</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">33.78</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">30.47</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>74.80</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">28.16</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">24.03</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">33.56</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">18.03</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">17.42</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">14.98</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">45.84</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">39.96</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">80.61</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">33.77</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">27.61</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">56.18</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">26.74</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">21.72</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">34.06</td>
+	</tr>
+	<tr>
+	  <td style="border: 1px solid #ddd; padding: 6px;">GeoVLM-R1</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>36.60</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>34.15</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>61.22</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>37.85</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">34.02</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">73.56</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>34.07</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>27.65</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>45.94</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>19.64</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>18.46</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;">15.45</td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>46.94</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>40.96</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>82.00</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>34.64</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>28.63</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>56.54</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>30.62</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>25.39</b></td>
+	  <td style="border: 1px solid #ddd; padding: 6px;"><b>39.07</b></td>
+	</tr>
+   </tbody>
+</table>
 
 
 
