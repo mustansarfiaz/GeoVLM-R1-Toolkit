@@ -45,7 +45,8 @@ pip install -e .
 
 3. Install additional packages for training cases
 ```
-pip install -r requirements.txt -f https://download.pytorch.org/whl/cu128
+pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu121
+pip install -r requirements.txt 
 pip install qwen-vl-utils
 pip install ninja
 pip install flash-attn --no-build-isolation
