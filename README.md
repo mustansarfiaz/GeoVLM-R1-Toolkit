@@ -113,7 +113,7 @@ Comparison of recent generic and specialized VLMs over diverse EO tasks. GeoVLM-
         } 
 ```
 ## 🙏 Acknowledgement
-We are thankful to [Qwen2-VL Series](https://github.com/2U1/Qwen2-VL-Finetune) and [VLM-R1]([https://github.com/2U1/Qwen2-VL-Finetune](https://github.com/om-ai-lab/VLM-R1)) for releasing their models and code as open-source contributions.
+We are thankful to [Qwen2-VL Series](https://github.com/2U1/Qwen2-VL-Finetune) and [VLM-R1](https://github.com/om-ai-lab/VLM-R1) for releasing their models and code as open-source contributions.
 
 ---
 [<img src="images/IBM_logo.png" width="100" height="100">](https://ibm.com/)
