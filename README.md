@@ -648,6 +648,174 @@ and temporal classification datasets compared to other existing VLMs.
    </tbody>
 </table>
 
+## 📊 Visual Question Answer Task
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13px;">
+  <caption style="caption-side: bottom; text-align: justify; color: gray; font-size: 14px;">
+    GeoVLM-R1 performs better compared to existing VLMs for Comp and R/U categories over RSVQA-LRBEN (left) and obtains a better average score for RSVQA-HRBEN (right). Comp: Comparison, R/U: Rural/Urban.
+  </caption>
+  <thead>
+	<tr>
+        <th rowspan="2" style="border:1px solid #ddd; padding:6px;">Model</th>
+        <th colspan="4" style="border:1px solid #ddd; padding:6px;">RSVQA-LRBEN</th>
+        <th rowspan="2" style="border:1px solid #ddd; padding:6px;">Model</th>
+        <th colspan="3" style="border:1px solid #ddd; padding:6px;">RSVQA-HRBEN (zero-shot)</th>
+      </tr>
+      <tr>
+        <th style="border:1px solid #ddd; padding:6px;">Presence</th>
+        <th style="border:1px solid #ddd; padding:6px;">Comp</th>
+        <th style="border:1px solid #ddd; padding:6px;">R/U</th>
+        <th style="border:1px solid #ddd; padding:6px;">Avg.</th>
+        <th style="border:1px solid #ddd; padding:6px;">Presence</th>
+        <th style="border:1px solid #ddd; padding:6px;">Comp</th>
+        <th style="border:1px solid #ddd; padding:6px;">Avg.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">MiniGPTv2</td>
+        <td style="border:1px solid #ddd; padding:6px;">55.16</td>
+        <td style="border:1px solid #ddd; padding:6px;">55.22</td>
+        <td style="border:1px solid #ddd; padding:6px;">39.00</td>
+        <td style="border:1px solid #ddd; padding:6px;">54.96</td>
+        <td style="border:1px solid #ddd; padding:6px;">MiniGPTv2</td>
+        <td style="border:1px solid #ddd; padding:6px;">40.79</td>
+        <td style="border:1px solid #ddd; padding:6px;">50.91</td>
+        <td style="border:1px solid #ddd; padding:6px;">46.46</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">Qwen2-VL</td>
+        <td style="border:1px solid #ddd; padding:6px;">38.57</td>
+        <td style="border:1px solid #ddd; padding:6px;">67.59</td>
+        <td style="border:1px solid #ddd; padding:6px;">61.00</td>
+        <td style="border:1px solid #ddd; padding:6px;">55.35</td>
+        <td style="border:1px solid #ddd; padding:6px;">Qwen2-VL</td>
+        <td style="border:1px solid #ddd; padding:6px;">66.44</td>
+        <td style="border:1px solid #ddd; padding:6px;">60.41</td>
+        <td style="border:1px solid #ddd; padding:6px;">63.06</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">InternVL2-8B</td>
+        <td style="border:1px solid #ddd; padding:6px;">58.54</td>
+        <td style="border:1px solid #ddd; padding:6px;">72.28</td>
+        <td style="border:1px solid #ddd; padding:6px;">71.00</td>
+        <td style="border:1px solid #ddd; padding:6px;">66.51</td>
+        <td style="border:1px solid #ddd; padding:6px;">InternVL2-8B</td>
+        <td style="border:1px solid #ddd; padding:6px;">67.35</td>
+        <td style="border:1px solid #ddd; padding:6px;">76.91</td>
+        <td style="border:1px solid #ddd; padding:6px;">72.70</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">Qwen2.5-VL-3B</td>
+        <td style="border:1px solid #ddd; padding:6px;">59.59</td>
+        <td style="border:1px solid #ddd; padding:6px;">75.04</td>
+        <td style="border:1px solid #ddd; padding:6px;">63.00</td>
+        <td style="border:1px solid #ddd; padding:6px;">68.40</td>
+        <td style="border:1px solid #ddd; padding:6px;">Qwen2.5-VL-3B</td>
+        <td style="border:1px solid #ddd; padding:6px;">59.89</td>
+        <td style="border:1px solid #ddd; padding:6px;">72.26</td>
+        <td style="border:1px solid #ddd; padding:6px;">66.81</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">GeoChat</td>
+        <td style="border:1px solid #ddd; padding:6px;">91.09</td>
+        <td style="border:1px solid #ddd; padding:6px;">90.33</td>
+        <td style="border:1px solid #ddd; padding:6px;">94.00</td>
+        <td style="border:1px solid #ddd; padding:6px;">90.70</td>
+        <td style="border:1px solid #ddd; padding:6px;">GeoChat</td>
+        <td style="border:1px solid #ddd; padding:6px;">58.45</td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>83.19</b></td>
+        <td style="border:1px solid #ddd; padding:6px;">72.30</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">LHRS-Bot</td>
+        <td style="border:1px solid #ddd; padding:6px;">88.51</td>
+        <td style="border:1px solid #ddd; padding:6px;">90.00</td>
+        <td style="border:1px solid #ddd; padding:6px;">89.07</td>
+        <td style="border:1px solid #ddd; padding:6px;">89.19</td>
+        <td style="border:1px solid #ddd; padding:6px;">EarthGPT</td>
+        <td style="border:1px solid #ddd; padding:6px;">62.77</td>
+        <td style="border:1px solid #ddd; padding:6px;">79.53</td>
+        <td style="border:1px solid #ddd; padding:6px;">72.06</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">TeoChat</td>
+        <td style="border:1px solid #ddd; padding:6px;">91.70</td>
+        <td style="border:1px solid #ddd; padding:6px;">92.70</td>
+        <td style="border:1px solid #ddd; padding:6px;">94.00</td>
+        <td style="border:1px solid #ddd; padding:6px;">92.29</td>
+        <td style="border:1px solid #ddd; padding:6px;">TeoChat</td>
+        <td style="border:1px solid #ddd; padding:6px;">67.50</td>
+        <td style="border:1px solid #ddd; padding:6px;">81.10</td>
+        <td style="border:1px solid #ddd; padding:6px;">75.04</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">EarthDial</td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>92.58</b></td>
+        <td style="border:1px solid #ddd; padding:6px;">92.75</td>
+        <td style="border:1px solid #ddd; padding:6px;">94.00</td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>92.70</b></td>
+        <td style="border:1px solid #ddd; padding:6px;">EarthDial</td>
+        <td style="border:1px solid #ddd; padding:6px;">58.89</td>
+        <td style="border:1px solid #ddd; padding:6px;">83.11</td>
+        <td style="border:1px solid #ddd; padding:6px;">72.45</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px; font-weight:bold;">GeoVLM-R1</td>
+        <td style="border:1px solid #ddd; padding:6px;">91.81</td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>93.20</b></td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>96</b></td>
+        <td style="border:1px solid #ddd; padding:6px;">92.66</td>
+        <td style="border:1px solid #ddd; padding:6px; font-weight:bold;">GeoVLM-R1</td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>66.38</b></td>
+        <td style="border:1px solid #ddd; padding:6px;">82.26</td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>75.27</b></td>
+      </tr>
+</tbody>
+</table>
+
+## 📊 Multi-temporal FMoW dataset Task
+
+<table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13px;">
+  <caption style="caption-side: bottom; text-align: justify; color: gray; font-size: 14px;">
+    Comparison over multi-temporal FMoW dataset, where the model is fine-tuned and tested over TeoChat-Instruct.
+  </caption>
+  <thead>	  
+	       <tr>
+        <th style="border:1px solid #ddd; padding:6px;">Model</th>
+        <th style="border:1px solid #ddd; padding:6px;">FMoW-High-Res</th>
+        <th style="border:1px solid #ddd; padding:6px;">FMoW-Low-Res</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">Video-LLaVA</td>
+        <td style="border:1px solid #ddd; padding:6px;">16.6</td>
+        <td style="border:1px solid #ddd; padding:6px;">4.9</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">Qwen2.5-VL-3B</td>
+        <td style="border:1px solid #ddd; padding:6px;">20.34</td>
+        <td style="border:1px solid #ddd; padding:6px;">5.45</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">GeoChat</td>
+        <td style="border:1px solid #ddd; padding:6px;">59.2</td>
+        <td style="border:1px solid #ddd; padding:6px;">26.3</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px;">TeoChat</td>
+        <td style="border:1px solid #ddd; padding:6px;">75.11</td>
+        <td style="border:1px solid #ddd; padding:6px;">45.5</td>
+      </tr>
+      <tr>
+        <td style="border:1px solid #ddd; padding:6px; font-weight:bold;">GeoVLM-R1</td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>78.53</b></td>
+        <td style="border:1px solid #ddd; padding:6px;"><b>53.0</b></td>
+      </tr> 
+</tbody>
+</table>
+
 ---
 
 ## 📜 Citation
