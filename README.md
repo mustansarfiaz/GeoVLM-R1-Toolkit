@@ -10,7 +10,8 @@
 
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://mustansarfiaz.github.io/GeoVLM-R1/)
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://www.arxiv.org/abs/2509.25026)
-[![hf_model](https://img.shields.io/badge/🤗-Model-blue.svg)]()
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-FF9900)](https://huggingface.co/mustansarfiaz/GeoVLM-R1)
+
 
 ---
 
