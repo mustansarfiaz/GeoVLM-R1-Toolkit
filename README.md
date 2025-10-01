@@ -99,6 +99,20 @@ Comparison of recent generic and specialized VLMs over diverse EO tasks. GeoVLM-
 </p>
 
 
+---
+## 📊 Image Classification Task
+
+GeoVLM-R1 illustrates a consistent improvement among zero-shot (ZS), multi-label BigEarthNet, 
+and temporal classification datasets compared to other existing VLMs.
+
+| Model          | AID (ZS) | UCMerced (ZS) | WHU-19 (ZS) | BigEarthNet | xBD Set 1 (Temporal) | FMoW (Temporal) |
+|----------------|----------|---------------|-------------|-------------|-----------------------|-----------------|
+| GPT-4o         | 74.73    | 88.76         | 91.14       | 49.00       | 67.95                 | 21.43           |
+| InternVL-8B    | 60.40    | 58.23         | 79.30       | 19.73       | 51.44                 | 21.04           |
+| Qwen2.5-VL-3B  | 58.27    | 60.86         | 78.21       | 24.75       | 51.44                 | 34.36           |
+| GeoChat        | 72.03    | 84.43         | 80.09       | 20.35       | 53.32                 | 59.20           |
+| EarthDial      | **88.76**| 92.42         | 96.21       | 73.03       | 96.37                 | 70.03           |
+| **GeoVLM-R1**  | 88.46    | **97.81**     | **97.91**   | **80.91**   | **98.93**             | **76.93**       |
 
 
 ---
