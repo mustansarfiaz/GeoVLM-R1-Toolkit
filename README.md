@@ -830,7 +830,7 @@ and temporal classification datasets compared to other existing VLMs.
         } 
 ```
 ## 🙏 Acknowledgement
-We are thankful to [Qwen2-VL Series](https://github.com/2U1/Qwen2-VL-Finetune) and [VLM-R1](https://github.com/om-ai-lab/VLM-R1) for releasing their models and code as open-source contributions.
+We are thankful to [EarthDail](https://github.com/hiyamdebary/EarthDial), [Qwen2-VL Series](https://github.com/2U1/Qwen2-VL-Finetune), and [VLM-R1](https://github.com/om-ai-lab/VLM-R1) for releasing their models and code as open-source contributions.
 
 ---
 [<img src="images/IBM_logo.png" width="80" height="80">](https://ibm.com/)
