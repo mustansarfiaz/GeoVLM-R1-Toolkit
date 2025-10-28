@@ -775,47 +775,7 @@ and temporal classification datasets compared to other existing VLMs.
 </tbody>
 </table>
 
-## 📊 Multi-temporal FMoW dataset Task
 
-<table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 13px;">
-  <caption style="caption-side: bottom; text-align: justify; color: gray; font-size: 14px;">
-    Comparison over multi-temporal FMoW dataset, where the model is fine-tuned and tested over TeoChat-Instruct.
-  </caption>
-  <thead>	  
-	       <tr>
-        <th style="border:1px solid #ddd; padding:6px;">Model</th>
-        <th style="border:1px solid #ddd; padding:6px;">FMoW-High-Res</th>
-        <th style="border:1px solid #ddd; padding:6px;">FMoW-Low-Res</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="border:1px solid #ddd; padding:6px;">Video-LLaVA</td>
-        <td style="border:1px solid #ddd; padding:6px;">16.6</td>
-        <td style="border:1px solid #ddd; padding:6px;">4.9</td>
-      </tr>
-      <tr>
-        <td style="border:1px solid #ddd; padding:6px;">Qwen2.5-VL-3B</td>
-        <td style="border:1px solid #ddd; padding:6px;">20.34</td>
-        <td style="border:1px solid #ddd; padding:6px;">5.45</td>
-      </tr>
-      <tr>
-        <td style="border:1px solid #ddd; padding:6px;">GeoChat</td>
-        <td style="border:1px solid #ddd; padding:6px;">59.2</td>
-        <td style="border:1px solid #ddd; padding:6px;">26.3</td>
-      </tr>
-      <tr>
-        <td style="border:1px solid #ddd; padding:6px;">TeoChat</td>
-        <td style="border:1px solid #ddd; padding:6px;">75.11</td>
-        <td style="border:1px solid #ddd; padding:6px;">45.5</td>
-      </tr>
-      <tr>
-        <td style="border:1px solid #ddd; padding:6px; font-weight:bold;">GeoVLM-R1</td>
-        <td style="border:1px solid #ddd; padding:6px;"><b>78.53</b></td>
-        <td style="border:1px solid #ddd; padding:6px;"><b>53.0</b></td>
-      </tr> 
-</tbody>
-</table>
 
 ---
 
