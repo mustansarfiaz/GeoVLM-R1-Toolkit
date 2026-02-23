@@ -16,8 +16,8 @@
 ---
 
 ## 📢 Latest Updates
-- **2025**: We will open-source the code, model, dataset, and evaluation scripts, which are coming soon. 
-- **2025**: Our model checkpoints will be released on HuggingFace.
+- **2026**: We will open-source the code, model, dataset, and evaluation scripts, which are coming soon. 
+- **2026**: Our model checkpoints will be released on HuggingFace.
 - **Sep-30-2025**: GeoVLM-R1 paper is released [arxiv link](https://www.arxiv.org/abs/2509.25026). 🔥🔥
 - **Sep-30-2025**: GeoVLM-R1 2025 project is live. 🔥🔥
 ---
