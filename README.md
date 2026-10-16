@@ -11,13 +11,13 @@
 [![Website](https://img.shields.io/badge/Project-Website-87CEEB)](https://mustansarfiaz.github.io/GeoVLM-R1/)
 [![paper](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://www.arxiv.org/abs/2509.25026)
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-Model-FF9900)](https://huggingface.co/mustansarfiaz/GeoVLM-R1)
-
+[![Code](https://img.shields.io/badge/GitHub-Code-181717?logo=github)](https://github.com/IBM/GeoVLM-R1-Toolkit)
 
 ---
 
 ## 📢 Latest Updates
-- **2026**: We will open-source the code, model, dataset, and evaluation scripts, which are coming soon. 
-- **2026**: Our model checkpoints will be released on HuggingFace.
+- **Oct-16-2026**: 🔥 We have released the [code](https://github.com/IBM/GeoVLM-R1-Toolkit), RL training data, and evaluation scripts!
+- - **2026**: Our model checkpoints will be released on HuggingFace.
 - **Sep-30-2025**: GeoVLM-R1 paper is released [arxiv link](https://www.arxiv.org/abs/2509.25026). 🔥🔥
 - **Sep-30-2025**: GeoVLM-R1 2025 project is live. 🔥🔥
 ---
